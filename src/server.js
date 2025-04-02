@@ -7,8 +7,6 @@ const { verifySignature } = require("@vonage/jwt");
 const app = express();
 const vonage = new Vonage(
   {
-    apiKey: process.env.VONAGE_API_KEY,
-    apiSecret: process.env.VONAGE_API_SECRET,
     applicationId: process.env.VONAGE_APPLICATION_ID,
     privateKey: process.env.VONAGE_PRIVATE_KEY,
   },
